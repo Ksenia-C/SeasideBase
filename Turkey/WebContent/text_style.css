@@ -1,0 +1,55 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alegreya&display=swap');
+
+article, footer{
+	font-family: 'Roboto Mono', monospace;
+	font-size:1.3em;
+	
+}
+
+
+article input[type=text], input[type=date]{
+	font-family: 'Roboto Mono', monospace;
+	font-size:0.8em;
+	
+}
+
+article .value textarea{
+	
+	font-family: 'Roboto Mono', monospace;
+	font-size:0.8em;
+
+	
+}
+
+
+.value select, input[type=file], input[type=submit]{
+	font-family: 'Roboto Mono', monospace;
+	font-size:0.8em;
+	
+	
+	
+	
+}
+
+
+nav{
+font-family: 'Alegreya', serif;
+	font-size:1.4em;
+	
+}
+
+
+
+i {
+    border: solid black;
+    border-width: 0 1.5px 1.5px 0;
+    display: inline-block;
+    padding: 4px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}

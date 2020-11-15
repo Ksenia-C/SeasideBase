@@ -1,0 +1,41 @@
+@charset "UTF-8";
+article .main_block{
+	display:block;
+	border-bottom:1px solid #d6dbde;
+}
+
+article .add_block1{
+	display:block;
+	border-right:1px solid #d6dbde;
+	width:50%;
+	float:left;
+	border-bottom:1px solid #d6dbde;
+	
+}
+article .add_block2{
+	display:block;
+	float:left;
+	width:calc(50% - 11px);
+	padding-left:10px;
+	border-bottom:1px solid #d6dbde;
+	
+}
+
+article a:link .add_block2{
+	color:#000;	
+	
+}
+article a:visited .add_block2{
+	color:#000;
+	
+}
+
+article a:hover .add_block2{
+	background-color:#b073bb;
+	background:linear-gradient(to right, #b073bb, #fff);
+	
+}
+
+article a:active .add_block2{
+	color:#512b58;	
+}

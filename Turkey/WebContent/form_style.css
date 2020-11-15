@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+
+
+article .block_cell{
+	display:inline-block;
+	width:100%;
+	margin-bottom:20px;
+}
+article .block_cell .text{
+	float:left;
+	display:inline-block;
+	width:40%;
+	margin-right:60px;
+}
+
+article .block_cell .value{
+	float:right;
+	display:inline-block;
+	width:calc(60% - 60px);
+}
+
+.value input[type=text], input[type=date], select, textarea {
+	width:100%;
+	
+}
+
+
+
+.value textarea{
+	resize: vertical;
+	min-height:100px;
+}
+
+ input[type=text], input[type=date]{
+	min-height:30px;
+	padding:10px;
+	width:calc(100% - 20px);
+	
+}
+
+article input[type=submit]{
+	cursor: pointer;
+	background-color: #79bac1;
+	float:right;
+	width:200px;
+	height:70px;
+	
+}
+
+ 
+
+ .protable {
+  display:none;
+
+}
+
+#conny:checked ~ .protable {
+  display:block;
+}
+
+#not_del{
+	display:block;
+}
+
+#all_del:checked ~ #not_del{
+	display:none;
+}
+
+.blocks{
+	min-width:100%;
+	min-height:1px;
+	display:inline-block;
+	
+}
+
+.blocks input[type=submit]{
+	float:left;
+	width:auto;
+	padding-left:10px;
+	padding-right:10px;
+}
+

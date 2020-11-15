@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+.MYtable {
+  display: table;
+  margin-left:-50px;
+}
+.MYtable a {
+  display: table-row;
+}
+.MYtable a span {
+  display: table-cell;
+}
+
+.MYtable a:first-child span{
+	border-top:2px solid #d6dbde;	
+	
+}
+
+.MYtable a span{
+	
+	padding:10px;
+	border-left:2px solid #d6dbde;	
+	border-bottom:2px solid #d6dbde;
+}
+
+.MYtable a span:first-child{
+	background-color:#d8b9dd;
+}
+.MYtable a span:last-child{
+	border-right:2px solid #d6dbde;	
+}
+
+
+.MYtable a:link{
+	color:#000;	
+	
+}
+.MYtable a:visited{
+	color:#000;
+	
+}
+
+.MYtable a:hover{
+	background-color:#b073bb;	
+	
+}
+
+.MYtable a:active{
+	color:#512b58;	
+}
+
+.MYtable a:first-child{	
+	background-color:#fff;
+}
+

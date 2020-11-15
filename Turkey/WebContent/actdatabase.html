@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>база данных - сервис работы с таблицами</title>
+	<link rel="stylesheet" type = "text/css" href = "main_style.css"/>
+	<link rel="stylesheet" type = "text/css" href = "text_style.css"/>
+	<link rel="stylesheet" type = "text/css" href = "form_style.css"/>
+	<script src="main.js"></script>
+
+
+</head>
+<body>
+  <div class="wrapper">
+
+<header>
+</header>
+
+<nav id = "menu" >
+<script>putMenu()</script>
+
+</nav>
+
+
+<article>
+<form class = "blocks" action = "DataBaseServlet" method = "post">
+<input style = "display:none" name = "switch" value = "1"/>
+<input type = "submit" value = "создать базу данных (текущая удалится)"/>
+</form>
+<form class = "blocks" action = "DataBaseServlet" method = "post">
+<input style = "display:none" name = "switch" value = "2"/>
+<input type = "submit" value = "удалить базу данных"/>
+</form>
+<form class = "blocks" action = "DataBaseServlet" method = "post">
+<input style = "display:none" name = "switch" value = "3"/>
+<input type = "submit" value = "увеличить класс у всех учеников"/>
+</form>
+
+</article>
+<div class="push"></div>
+</div>
+<footer>
+<script>putFoot()</script>
+
+</footer>
+
+</body>
+</html>
