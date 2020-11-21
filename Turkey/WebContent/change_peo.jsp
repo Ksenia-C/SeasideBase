@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-	<title>человек - сервис работы с таблицами</title>
-	<link rel="stylesheet" type = "text/css" href = "main_style.css"/>
-	<link rel="stylesheet" type = "text/css" href = "text_style.css"/>
-	<link rel="stylesheet" type = "text/css" href = "form_style.css"/>
+	<title>Human - Seaside base</title>
+	<link rel="stylesheet" type = "text/css" href = "styles/main_style.css"/>
+	<link rel="stylesheet" type = "text/css" href = "styles/text_style.css"/>
+	<link rel="stylesheet" type = "text/css" href = "styles/form_style.css"/>
 	<script src="main.js"></script>
 
 
@@ -28,55 +28,45 @@
 
 <form method="get" action  = "CanPeoServlet" >
 <input style = "display:none" name = "id" value = <%=request.getParameter("id")%>>
-<input type = "checkbox" id = "all_del" name = "del" value = "yes" />удалить человека?
+<input type = "checkbox" id = "all_del" name = "del" value = "yes" /> delete the human page?
 <div id = "not_del">
-Изменить
+Change
 		<div class = "block_cell">
-			<div class = "text">Имя</div>
+			<div class = "text">Name</div>
 			<div class = "value"><input type = "text"  name ="StudentName"></div>
 		</div>
 		
 		<div class = "block_cell">
-			<div class = "text">Фамилия</div>
+			<div class = "text">Surname</div>
 			<div class = "value"><input type = "text"  name ="StudentSurname"></div>
 		</div>
 		
 		<div class = "block_cell">
-			<div class = "text">Отчество</div>
+			<div class = "text">Patronymic</div>
 			<div class = "value"><input type = "text" name ="StudentPatronymic"></div>
 		</div>
 		 
 		<div class = "block_cell">
-			<div class = "text">День рождения</div>
+			<div class = "text">Birthday</div>
 			<div class = "value"><input type = "date" name ="StudentBirthday"></div>
 		</div>
 		
 		<div class = "block_cell">
-			<div class = "text">Школа</div>
-			<div class = "value"><input type = "text" name ="StudentSchool"></div>
-		</div>
-		
-		<div class = "block_cell">
-			<div class = "text">Класс</div>
-			<div class = "value"><input type = "text" name ="StudentClass"></div>
-		</div>
-		
-		<div class = "block_cell">
-			<div class = "text">Город</div>
+			<div class = "text">City</div>
 			<div class = "value"><input type = "text" name ="StudentCity"></div>
 		</div>
 	
 	<div class ="block_cell">
-			<div class = "text">Удалить дополнительные параметры через точку с запятой</div>
-			<div class = "value"><textarea id = "textarea" name = "DPeopleAdd"></textarea></div>
+			<div class = "text">Delete optional data (enumerate by semicolon)</div>
+			<div class = "value"><textarea id = "textarea" name = "DPeopleAdd" placeholder = "job; univercity"></textarea></div>
 	</div>
 	<div class ="block_cell">
-			<div class = "text">Изменить дополнительные параметры через точку с запятой</div>
-			<div class = "value"><textarea id = "textarea" name = "СPeopleAdd"></textarea></div>
+			<div class = "text">Change optional data (enumerate by semicolon and dash)</div>
+			<div class = "value"><textarea id = "textarea" name = "СPeopleAdd" placeholder = "job - enginer"></textarea></div>
 	</div>
 	<div class ="block_cell">
-			<div class = "text">Добавить дополнительные параметры через точку с запятой</div>
-			<div class = "value"><textarea id = "textarea" name = "APeopleAdd"></textarea></div>
+			<div class = "text">Add optional data (enumerate by semicolon and dash)</div>
+			<div class = "value"><textarea id = "textarea" name = "APeopleAdd" placeholder = "job - designer; group - 3"></textarea></div>
 	</div>
 	
 	

@@ -1,4 +1,15 @@
 @charset "UTF-8";
+
+:root {
+	--bg-color: #f1f3f4;
+	--hd-color: #ff9a76;
+	--nav-color: #679b9b;
+	--top-menu-color: #ffeadb;
+	--sub-menu-color: #ffbea6;
+	--foot-color: #637373;
+}
+
+
 article .main_block{
 	display:block;
 	border-bottom:1px solid #d6dbde;

@@ -2,10 +2,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-	<title>спросить про людей - сервис работы с таблицами</title>
-	<link rel="stylesheet" type = "text/css" href = "main_style.css"/>
-	<link rel="stylesheet" type = "text/css" href = "text_style.css"/>
-	<link rel="stylesheet" type = "text/css" href = "form_style.css"/>
+	<title>Request about people - Seaside Base</title>
+	<link rel="stylesheet" type = "text/css" href = "styles/main_style.css"/>
+	<link rel="stylesheet" type = "text/css" href = "styles/text_style.css"/>
+	<link rel="stylesheet" type = "text/css" href = "styles/form_style.css"/>
 	<script src="main.js"></script>
 
 
@@ -26,57 +26,41 @@
 
 <form method="get" action  = "AskPeoServlet">
 		<div class = "block_cell">
-			<div class = "text">Имя</div>
+			<div class = "text">Name</div>
 			<div class = "value"><input type = "text"  name ="StudentName"  value = ""></div>
 		</div>
 		
 		<div class = "block_cell">
-			<div class = "text">Фамилия</div>
+			<div class = "text">Surname</div>
 			<div class = "value"><input type = "text"  name ="StudentSurname"  value = ""></div>
 		</div>
 		
 		<div class = "block_cell">
-			<div class = "text">Отчество</div>
+			<div class = "text">Patronymic</div>
 			<div class = "value"><input type = "text" name ="StudentPatronymic"  value = ""></div>
 		</div>
 		
 		<div class = "block_cell">
-			<div class = "text">Возраст</div>
-			<div class = "value"><input type = "text" name ="StudentAge"  value = ""></div>
-		</div>
-		
-		<div class = "block_cell">
-			<div class = "text">День рождения</div>
+			<div class = "text">Birthday</div>
 			<div class = "value"><input type = "text" name ="StudentBirthday"  value = ""></div>
 		</div>
-		
 		<div class = "block_cell">
-			<div class = "text">Школа</div>
-			<div class = "value"><input type = "text" name ="StudentSchool"  value = ""></div>
-		</div>
-		
-		<div class = "block_cell">
-			<div class = "text">Класс</div>
-			<div class = "value"><input type = "text" name ="StudentClass"  value = ""></div>
-		</div>
-		
-		<div class = "block_cell">
-			<div class = "text">Город</div>
+			<div class = "text">City</div>
 			<div class = "value"><input type = "text" name ="StudentCity"  value = ""></div>
 		</div>
 			
 	<div class = "block_cell">
 		<div class = "text">
-		если хотите искать по дополнительному параметру, то укажите их здесь через точку с запятой. <br>
-		сначала название параметра, а затем его значение. Помните, пока все хранится как строки.
+		Add searching optional parameters by semicolons. <br>
+		The title is the first, the second is the value.
 		</div>
 		<div class = "value">
-		<textarea name = "StudentAdd" placeholder = "количество глаз - 2; количество наград - 10"
+		<textarea name = "StudentAdd" placeholder = "has a pet - yes"
 		cols = "40" rows = "5" ></textarea> 
 		</div>
 </div>
 			<div class = "block_cell">
-				<input type = "submit" value = "Узнать"/>
+				<input type = "submit" value = "Request"/>
 	
 		</div>
 	

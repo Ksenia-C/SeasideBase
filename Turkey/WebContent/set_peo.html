@@ -2,10 +2,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-	<title>добавить таблицу с личными данными - сервис работы с таблицами</title>
-	<link rel="stylesheet" type = "text/css" href = "main_style.css"/>
-	<link rel="stylesheet" type = "text/css" href = "text_style.css"/>
-	<link rel="stylesheet" type = "text/css" href = "form_style.css"/>
+	<title>add table with personal data - Seaside Base</title>
+	<link rel="stylesheet" type = "text/css" href = "styles/main_style.css"/>
+	<link rel="stylesheet" type = "text/css" href = "styles/text_style.css"/>
+	<link rel="stylesheet" type = "text/css" href = "styles/form_style.css"/>
 
 	<script src="main.js"></script>
 
@@ -28,64 +28,48 @@
 
 <form method="post" action  = "AddPeoServlet" enctype="multipart/form-data">
 		<div class = "block_cell">
-			<div class = "text">Имя</div>
+			<div class = "text">Name</div>
 			<div class = "value"><input type = "text" required name ="StudentName" pattern = "^[ 0-9]+$" value = "1"></div>
 		</div>
 		
 		<div class = "block_cell">
-			<div class = "text">Фамилия</div>
+			<div class = "text">Surname</div>
 			<div class = "value"><input type = "text" required name ="StudentSurname" pattern = "^[ 0-9]+$" value = "2"></div>
 		</div>
 		
 		<div class = "block_cell">
-			<div class = "text">Отчество</div>
+			<div class = "text">Patronymic</div>
 			<div class = "value"><input type = "text" name ="StudentPatronymic" pattern = "^[ 0-9]+$" value = "3"></div>
 		</div>
-		
 		<div class = "block_cell">
-			<div class = "text">Возраст</div>
-			<div class = "value"><input type = "text" name ="StudentAge" pattern = "^[ 0-9]+$" value = "4"></div>
+			<div class = "text">Birthday</div>
+			<div class = "value"><input type = "text" name ="StudentBirthday" pattern = "^[ 0-9]+$" value = "4"></div>
 		</div>
 		
 		<div class = "block_cell">
-			<div class = "text">День рождения</div>
-			<div class = "value"><input type = "text" name ="StudentBirthday" pattern = "^[ 0-9]+$" value = "5"></div>
-		</div>
-		
-		<div class = "block_cell">
-			<div class = "text">Школа</div>
-			<div class = "value"><input type = "text" name ="StudentSchool" pattern = "^[ 0-9]+$" value = "6"></div>
-		</div>
-		
-		<div class = "block_cell">
-			<div class = "text">Класс</div>
-			<div class = "value"><input type = "text" name ="StudentClass" pattern = "^[ 0-9]+$" value = "7"></div>
-		</div>
-		
-		<div class = "block_cell">
-			<div class = "text">Город</div>
-			<div class = "value"><input type = "text" name ="StudentCity" pattern = "^[ 0-9]+$" value = "8"></div>
+			<div class = "text">City</div>
+			<div class = "value"><input type = "text" name ="StudentCity" pattern = "^[ 0-9]+$" value = "5"></div>
 		</div>
 			
 	<div class = "block_cell">
 		<div class = "text">
-Ниже укажите, какие параметры вы также хотите добавить. Через точку с запятой перечислите номера столбцов. <br>
-	 Если хотите указать под каким названием сохранить параметр, укажите его перез тире
+Optional parameters. Separate index of columns by semicolon. <br>
+	Title of parameter can be written after dash
 	 		</div>
 		<div class = "value">
 		<textarea name = "StudentAdd" placeholder = "1; 10; 2-name2; 5"
-		cols = "40" rows = "5" >9 - random</textarea> 
+		cols = "40" rows = "5" ></textarea> 
 		</div>
 </div>
 <div class = "block_cell">
-			Добавте таблицу: <input type = "file" name="TableSource" accept =".csv"/>    *.csv
+			Add table: <input type = "file" name="TableSource" accept =".csv"/>    *.csv
 			</div>
-есть ли заголовок
-<input type="checkbox" name = "ActTitles" value = "yes" checked/>
+Mark if it has string of titles
+<input type="checkbox" name = "ActTitles" value = "yes"/>
 		
 			
 			<div class = "block_cell">
-				<input type = "submit" value = "Загрузить"/>
+				<input type = "submit" value = "Load"/>
 	
 		</div>
 	

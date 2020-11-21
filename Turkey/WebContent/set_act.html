@@ -2,10 +2,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-	<title>добавить таблицу результатов - сервис работы с таблицами</title>
-	<link rel="stylesheet" type = "text/css" href = "main_style.css"/>
-	<link rel="stylesheet" type = "text/css" href = "text_style.css"/>
-	<link rel="stylesheet" type = "text/css" href = "form_style.css"/>
+	<title>add table about event - Seaside Base</title>
+	<link rel="stylesheet" type = "text/css" href = "styles/main_style.css"/>
+	<link rel="stylesheet" type = "text/css" href = "styles/text_style.css"/>
+	<link rel="stylesheet" type = "text/css" href = "styles/form_style.css"/>
 	<script src="main.js"></script>
 
 
@@ -27,91 +27,69 @@
 
 <form method="post" action  = "AddActServlet" enctype="multipart/form-data">
 	<div class = "block_cell">
-			<div class = "text">Название</div>
+			<div class = "text">Title</div>
 			<div class = "value"><input type="text" required name = "EventName" value = "olympo"/></div>
 		</div>
 		
 	<div class = "block_cell">
-			<div class = "text">дата проведения или начала</div>
+			<div class = "text">Data of taking part</div>
 			<div class = "value"><input type = "date" name = "EventDateMain" value = "2020-05-08"/></div>
 </div>		
 	<div class = "block_cell">
-			<div class = "text">дата окончания, если это продолжительное мероприятие</div>
-			<div class = "value"><input type = "date" name = "EventDateEnd"/></div>
+			<div class = "text">Duration</div>
+			<div class = "value"><input type = "text" name = "EventDuration" pattern = "^[ 0-9]+$" value = "1" /></div>
 </div>		
 	<div class = "block_cell">
-			<div class = "text">тип мероприятия</div>
-			<div class = "value"><select name = "EventType">
-			<option value = "EventOlymp" >Этап олимпиады</option>
-			<option value = "EventSchool">Сборы/Школа</option>			
-			</select></div>
-</div>		
-	<div class = "block_cell">
-			<div class = "text">Места проведения через точку с запятой</div>
+			<div class = "text">Venues separated by semocolon</div>
 			<div class = "value"><textarea id = "textarea" name = "EventPlace"></textarea></div>
 </div>		
 	<div class = "block_cell">
 		<div class = "text">
-		Если вы хотите сохранить еще больше информации о мероприятии,<br> напишите через точку с запятой название параметра и его значение<br>
+		Add optional data. <br> By semicolon write title of parameters and their values<br>
 		</div>
 		<div class = "value">
-				<textarea name = "EventAdd" placeholder = "количество участников - 403; уровень олимпиады - 1; лучший приз - книга 'люди и камни'"
+				<textarea name = "EventAdd" placeholder = "quantity of participators - 403; type of event - It school; manager - David"
 		cols = "50" rows = "2"></textarea>
 		</div>
 </div>
 <div class = "block_cell">
-			Добавте таблицу: <input type = "file" name="TableSource" accept =".csv"/>    *.csv
+			Add table: <input type = "file" name="TableSource" accept =".csv"/>    *.csv
 			</div>
 <div class = "block_cell">
-есть ли заголовок
-<input type="checkbox" name = "ActTitles" value = "yes" checked/>
-сохранять ли всю таблицу
-<input type="checkbox" name = "all" value = "yes" checked/>
+Mark if it has string with titles of colomns
+<input type="checkbox" name = "ActTitles" value = "yes"/>
+Mark to save the whole table
+<input type="checkbox" name = "all" value = "yes"/>
 			
 </div>
 
 <div class = "block_cell">
-			Связать таблицу с базой детей?
+			Connect with base of participators?
 			<input type="checkbox" id="conny" name = "Conny" value = "yes"/>
 			<div class="protable">
-			укажите номера столбцов, с которыми нужно соотнести это параметры
+			Write indexes of colomns concerned with personal parameters
 			<div class = "block_cell">
-			<div class = "text">Имя</div>
+			<div class = "text">Name</div>
 			<div class = "value"><input type = "text" required name ="StudentName" pattern = "^[ 0-9]+$" value = "1"></div>
 		</div>
 		
 		<div class = "block_cell">
-			<div class = "text">Фамилия</div>
+			<div class = "text">Surname</div>
 			<div class = "value"><input type = "text" name ="StudentSurname" pattern = "^[ 0-9]+$" value = "2"></div>
 		</div>
 		
 		<div class = "block_cell">
-			<div class = "text">Отчество</div>
+			<div class = "text">Patronymic</div>
 			<div class = "value"><input type = "text" name ="StudentPatronymic" pattern = "^[ 0-9]+$" value = "3"></div>
 		</div>
 		
 		<div class = "block_cell">
-			<div class = "text">Возраст</div>
-			<div class = "value"><input type = "text" name ="StudentAge" pattern = "^[ 0-9]+$" value = "4"></div>
-		</div>
-		
-		<div class = "block_cell">
-			<div class = "text">День рождения</div>
+			<div class = "text">Birthday</div>
 			<div class = "value"><input type = "text" name ="StudentBirthday" pattern = "^[ 0-9]+$"></div>
 		</div>
 		
 		<div class = "block_cell">
-			<div class = "text">Школа</div>
-			<div class = "value"><input type = "text" name ="StudentSchool" pattern = "^[ 0-9]+$"></div>
-		</div>
-		
-		<div class = "block_cell">
-			<div class = "text">Класс</div>
-			<div class = "value"><input type = "text" name ="StudentClass" pattern = "^[ 0-9]+$"></div>
-		</div>
-		
-		<div class = "block_cell">
-			<div class = "text">Город</div>
+			<div class = "text">City</div>
 			<div class = "value"><input type = "text" name ="StudentCity" pattern = "^[ 0-9]+$"></div>
 		</div>
 			</div>
@@ -120,7 +98,7 @@
 
 
 			<div class = "block_cell">
-				<input type = "submit" value = "Загрузить"/>
+				<input type = "submit" value = "Load"/>
 	
 		</div>
 	

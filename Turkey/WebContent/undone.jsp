@@ -5,9 +5,9 @@
 <head>
 <meta charset="UTF-8">
 	<title>добавление... - сервис работы с таблицами</title>
-	<link rel="stylesheet" type = "text/css" href = "main_style.css"/>
-	<link rel="stylesheet" type = "text/css" href = "text_style.css"/>
-	<link rel="stylesheet" type = "text/css" href = "own_style.css"/>
+	<link rel="stylesheet" type = "text/css" href = "styles/main_style.css"/>
+	<link rel="stylesheet" type = "text/css" href = "styles/text_style.css"/>
+	<link rel="stylesheet" type = "text/css" href = "styles/own_style.css"/>
 	<script src="main.js"></script>
 
 </head>

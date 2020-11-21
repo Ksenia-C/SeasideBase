@@ -7,8 +7,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-	<link rel="stylesheet" type = "text/css" href = "main_style.css"/>
-	<link rel="stylesheet" type = "text/css" href = "text_style.css"/>
+	<link rel="stylesheet" type = "text/css" href = "styles/main_style.css"/>
+	<link rel="stylesheet" type = "text/css" href = "styles/text_style.css"/>
 	<script src="main.js"></script>
 
 <title>добавление... - - сервис работы с таблицами</title>

@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-	<title>мероприятие - сервис работы с таблицами</title>
-	<link rel="stylesheet" type = "text/css" href = "main_style.css"/>
-	<link rel="stylesheet" type = "text/css" href = "text_style.css"/>
-	<link rel="stylesheet" type = "text/css" href = "own_style.css"/>
+	<title>Event - Seaside Base</title>
+	<link rel="stylesheet" type = "text/css" href = "styles/main_style.css"/>
+	<link rel="stylesheet" type = "text/css" href = "styles/text_style.css"/>
+	<link rel="stylesheet" type = "text/css" href = "styles/own_style.css"/>
 	<script src="main.js"></script>
 
 </head>
@@ -25,22 +25,21 @@
 
 <article>
 
-<a href = "change_act.jsp?id=<%=request.getParameter("id") %>">Изменить данные</a>
+<a href = "change_act.jsp?id=<%=request.getParameter("id") %>">Change data</a>
 <div class = "main_block">
 <%=
 request.getAttribute("title")
 %>
 </div>
 <div class="main_block">
-<%=request.getAttribute("maindate")%></div>
+<%=request.getAttribute("date_main")%></div>
 <div class="main_block"><%=
-request.getAttribute("enddate")
+request.getAttribute("duration")
+%></div>
+<div class="main_block"><%=
+request.getAttribute("places")
 %></div>
 
-
-<div class="main_block"><%=
-request.getAttribute("type").toString()=="0"?"этап олимпиады":"сборы/школа"
-%></div>
 
 <%! Integer col = 0;%> 
 <%col = Integer.parseInt(request.getAttribute("howmany").toString()); 
@@ -53,7 +52,7 @@ request.getAttribute("iname"+i.toString())
 request.getAttribute("icontent"+i.toString()) 
 %></div>
 <%} %>
-Таблица
+Table
 <%=request.getAttribute("table")%>
 </article>
 <div class="push"></div>

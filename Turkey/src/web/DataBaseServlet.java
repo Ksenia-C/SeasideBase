@@ -43,19 +43,15 @@ public class DataBaseServlet extends HttpServlet {
                 			"surname TINYBLOB,\r\n" + 
                 			"patronymic TINYBLOB,\r\n" + 
                 			"birthday DATE,\r\n" + 
-                			"school BLOB,\r\n" + 
-                			"class TINYINT,\r\n" + 
-                			"city BLOB)\r\n" + 
-                			"ENGINE=InnoDB DEFAULT CHARSET=utf8;");
+                			"city BLOB);");
                 	//Activity
                 	statement.executeUpdate("CREATE TABLE Activity(\r\n" + 
                 			"id_act INT PRIMARY KEY,\r\n" + 
                 			"title BLOB,\r\n" + 
                 			"date_main DATE,\r\n" + 
-                			"date_end Date,\r\n" + 
-                			"type INT,\r\n" + 
-                			"table_name BLOB)\r\n" + 
-                			"ENGINE=InnoDB DEFAULT CHARSET=utf8;");
+                			"duration INT,\r\n" + 
+                			"places BLOB,\r\n" + 
+                			"table_name BLOB);");
                 	//Participation
                 	statement.executeUpdate("CREATE TABLE Participation(\r\n" + 
                 			"id_homo INT,\r\n" + 
@@ -63,20 +59,17 @@ public class DataBaseServlet extends HttpServlet {
                 			"PRIMARY KEY (id_homo, id_act),\r\n" + 
                 			"FOREIGN KEY (id_homo) REFERENCES People(id_homo),\r\n" + 
                 			"FOREIGN KEY (id_act) REFERENCES Activity(id_act)\r\n" + 
-                			")\r\n" + 
-                			"ENGINE=InnoDB DEFAULT CHARSET=utf8;");
+                			");");
                 	//Additional
                 	statement.executeUpdate("CREATE TABLE Additional(\r\n" + 
                 			"id_homo INT REFERENCES People,\r\n" + 
                 			"aname TINYBLOB,\r\n" + 
-                			"acontent BLOB)\r\n" + 
-                			"ENGINE=InnoDB DEFAULT CHARSET=utf8;");
+                			"acontent BLOB);");
                 	//MoreInf
                 	statement.executeUpdate("CREATE TABLE MoreInf( \r\n" + 
                 			"id_act INT REFERENCES Activity, \r\n" + 
                 			"iname TINYBLOB, \r\n" + 
-                			"icontent BLOB)\r\n" + 
-                			"ENGINE=InnoDB DEFAULT CHARSET=utf8;\r\n");
+                			"icontent BLOB);");
                 }
                 else if(sw==2) {
                 	statement.executeUpdate("drop DATABASE seaside_base;");

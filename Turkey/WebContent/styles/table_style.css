@@ -1,4 +1,12 @@
 @charset "UTF-8";
+:root {
+	--bg-color: #f1f3f4;
+	--hover-color: #ff9a76;
+	--nav-color: #679b9b;
+	--top-menu-color: #ffeadb;
+	--enum-color: #ffbea6;
+	--foot-color: #637373;
+}
 
 .MYtable {
   display: table;
@@ -24,7 +32,7 @@
 }
 
 .MYtable a span:first-child{
-	background-color:#d8b9dd;
+	background-color: var(--enum-color);
 }
 .MYtable a span:last-child{
 	border-right:2px solid #d6dbde;	
@@ -41,12 +49,12 @@
 }
 
 .MYtable a:hover{
-	background-color:#b073bb;	
+	background-color:var(--hover-color);	
 	
 }
 
 .MYtable a:active{
-	color:#512b58;	
+	color:var(--foot-color);	
 }
 
 .MYtable a:first-child{	

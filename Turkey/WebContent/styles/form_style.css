@@ -1,5 +1,7 @@
 @charset "UTF-8";
-
+:root {
+	--bt-color: #ff9a76;
+}
 
 
 article .block_cell{
@@ -41,7 +43,7 @@ article .block_cell .value{
 
 article input[type=submit]{
 	cursor: pointer;
-	background-color: #79bac1;
+	background-color: var(--bt-color);
 	float:right;
 	width:200px;
 	height:70px;
