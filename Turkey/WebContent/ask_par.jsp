@@ -25,11 +25,23 @@
 
 <article>
 <form method="get" action  = "AskParServlet">
-	<input name = "first_cond" value = <%=request.getParameter("fir_cond").replace("+", "%2B").replace(" ", "+") %> style = "display:none">
-	<input name = "first_cond_and" value = <%=request.getParameter("fir_cond_and") %> style = "display:none">
+<%if (request.getParameter("StudentName") != null) {%>
+	<input name = "StudentName" value = <%=request.getParameter("StudentName").replace("+", "%2B").replace(" ", "+") %> style = "display:none">
+<%}if (request.getParameter("StudentSurname") != null) {%>
+	<input name = "StudentSurname" value = <%=request.getParameter("StudentSurname") %> style = "display:none">
+<%}if (request.getParameter("StudentPatronymic") != null) {%>
+	<input name = "StudentPatronymic" value = <%=request.getParameter("StudentPatronymic") %> style = "display:none">
+<%}if (request.getParameter("StudentBirthday") != null){ %>
+	<input name = "StudentBirthday" value = <%=request.getParameter("StudentBirthday") %> style = "display:none">
+<%}if (request.getParameter("StudentCity") != null) {%>
+	<input name = "StudentCity" value = <%=request.getParameter("StudentCity") %> style = "display:none">
+<%}if (request.getParameter("StudentAdd") != null) {%>
+	<input name = "StudentAdd" value = <%=request.getParameter("StudentAdd") %> style = "display:none">
+	<%} %>
+	
 	<div class = "block_cell">
 			<div class = "text">Title</div>
-			<div class = "value"><input type="text" name = "EventName" value = "olympo"/></div>
+			<div class = "value"><input type="text" name = "EventName"/></div>
 		</div>
 		
 	<div class = "block_cell">

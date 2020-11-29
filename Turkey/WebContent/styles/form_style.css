@@ -32,13 +32,21 @@ article .block_cell .value{
 .value textarea{
 	resize: vertical;
 	min-height:100px;
+		padding:10px;
+	
 }
 
  input[type=text], input[type=date]{
 	min-height:30px;
-	padding:10px;
 	width:calc(100% - 20px);
 	
+}
+input[type=text] {
+	padding:10px;
+}
+
+input[type=date] {
+	padding: 10px 20px 10px 20px;		
 }
 
 article input[type=submit]{

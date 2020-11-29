@@ -21,20 +21,20 @@ function putMenu(NotA) {
 	        '<a href = "set_act.html"><li>with event</li></a>'+
 '	      </ul>'+
 '	</li>'+
-'	<li> make request <i class="arrow down"></i>'+
+'	<li> Make request <i class="arrow down"></i>'+
 '	 <ul class="submenu" style = "width: 200px ">'+
 '	        <a href = "ask_peo.html"><li>about people</li></a>'+
-'	        <a href = "ask_act.html"><li>about event</li></a>'+
+'	        <a href = "ask_act.html"><li>about events</li></a>'+
 '	      </ul>'+
 '	</li>'+
 '	<a href = "actdatabase.html">'+
-'	<li>operations with database'+	 
+'	<li>Operations with database'+	 
 	'</li></a>'+
 	'</ul>';
 	document.write(str);
 }
 
 function putFoot(){
-	var str = "email - kseniapetrenko6@gmail.com";
+	var str = "contact email - kseniapetrenko6@gmail.com";
 	document.write(str);
 }

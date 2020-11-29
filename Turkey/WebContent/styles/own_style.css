@@ -6,7 +6,7 @@
 	--nav-color: #679b9b;
 	--top-menu-color: #ffeadb;
 	--sub-menu-color: #ffbea6;
-	--foot-color: #637373;
+	--foot-color: #4a5757;
 }
 
 
@@ -32,21 +32,23 @@ article .add_block2{
 	
 }
 
-article a:link .add_block2{
-	color:#000;	
+article a:link{
+	color: var(--nav-color);	
 	
 }
-article a:visited .add_block2{
-	color:#000;
-	
-}
-
-article a:hover .add_block2{
-	background-color:#b073bb;
-	background:linear-gradient(to right, #b073bb, #fff);
+article a:visited{
+	color: var(--nav-color);
 	
 }
 
-article a:active .add_block2{
-	color:#512b58;	
+article a:hover{
+	color: var(--foot-color);
+}
+
+article a:active{
+	color: var(--foot-color);	
+}
+
+article table td {
+	padding: 3px 10px 3px 5px;
 }

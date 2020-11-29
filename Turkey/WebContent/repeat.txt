@@ -35,13 +35,13 @@ request.getAttribute("exact answer")
 Для всех людей, у кого нашлась ровно одна строчка, уже стоит дополнить эту строчку. У остальных - не добавлять
 
 <table>
-
 <%
-ArrayList<Repeat> manut = new ArrayList<Repeat>();
-manut  =  (ArrayList<Repeat>)request.getAttribute("classrep");
+ ArrayList<Repeat> manut = new ArrayList<Repeat>();
+ manut  =  (ArrayList<Repeat>)request.getAttribute("classrep");
 %>
-<input name= "cnt" value = <%=manut.size() %> style = "display:none"/>
-
+<!--
+  <input name= "cnt" value = <%=manut.size() %> style = "display:none"/>
+-->
 <%
 Integer cnt = 0;
 String[] name_basa = {"name", "surname", "patronymic",

@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-	<title>база данных - сервис работы с таблицами</title>
+	<title>Database - SeasideBase</title>
 	<link rel="stylesheet" type = "text/css" href = "styles/main_style.css"/>
 	<link rel="stylesheet" type = "text/css" href = "styles/text_style.css"/>
 	<link rel="stylesheet" type = "text/css" href = "styles/form_style.css"/>
@@ -25,15 +25,14 @@
 <article>
 <form class = "blocks" action = "DataBaseServlet" method = "post">
 <input style = "display:none" name = "switch" value = "1"/>
-<input type = "submit" value = "создать базу данных (текущая удалится)"/>
+<input type = "submit" value = "Create new database (current one will be deleted)"/>
 </form>
+
+<br><br>
+
 <form class = "blocks" action = "DataBaseServlet" method = "post">
 <input style = "display:none" name = "switch" value = "2"/>
-<input type = "submit" value = "удалить базу данных"/>
-</form>
-<form class = "blocks" action = "DataBaseServlet" method = "post">
-<input style = "display:none" name = "switch" value = "3"/>
-<input type = "submit" value = "увеличить класс у всех учеников"/>
+<input type = "submit" value = "Delete database"/>
 </form>
 
 </article>

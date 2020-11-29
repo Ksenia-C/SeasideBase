@@ -30,6 +30,8 @@
 <input style = "display:none" name = "id" value = <%=request.getParameter("id")%>>
 <input type = "checkbox" id = "all_del" name = "del" value = "yes" /> delete the human page?
 <div id = "not_del">
+<br>
+
 Change
 		<div class = "block_cell">
 			<div class = "text">Name</div>
@@ -57,15 +59,15 @@ Change
 		</div>
 	
 	<div class ="block_cell">
-			<div class = "text">Delete optional data (enumerate by semicolon)</div>
+			<div class = "text">Delete optional data (enumerate items by semicolons)</div>
 			<div class = "value"><textarea id = "textarea" name = "DPeopleAdd" placeholder = "job; univercity"></textarea></div>
 	</div>
 	<div class ="block_cell">
-			<div class = "text">Change optional data (enumerate by semicolon and dash)</div>
+			<div class = "text">Change optional data (enumerate items by semicolons)</div>
 			<div class = "value"><textarea id = "textarea" name = "СPeopleAdd" placeholder = "job - enginer"></textarea></div>
 	</div>
 	<div class ="block_cell">
-			<div class = "text">Add optional data (enumerate by semicolon and dash)</div>
+			<div class = "text">Add optional data (enumerate items by semicolons)</div>
 			<div class = "value"><textarea id = "textarea" name = "APeopleAdd" placeholder = "job - designer; group - 3"></textarea></div>
 	</div>
 	
@@ -74,7 +76,7 @@ Change
 </div>
 
 	<div class ="block_cell">
-		<input type = "submit" value = "изменить">
+		<input type = "submit" value = "change">
 	</div>
 
 

@@ -28,59 +28,62 @@
 <form method="post" action  = "AddActServlet" enctype="multipart/form-data">
 	<div class = "block_cell">
 			<div class = "text">Title</div>
-			<div class = "value"><input type="text" required name = "EventName" value = "olympo"/></div>
+			<div class = "value"><input type="text" required name = "EventName"/></div>
 		</div>
 		
 	<div class = "block_cell">
 			<div class = "text">Data of taking part</div>
-			<div class = "value"><input type = "date" name = "EventDateMain" value = "2020-05-08"/></div>
+			<div class = "value"><input type = "date" name = "EventDateMain"/></div>
 </div>		
 	<div class = "block_cell">
 			<div class = "text">Duration</div>
-			<div class = "value"><input type = "text" name = "EventDuration" pattern = "^[ 0-9]+$" value = "1" /></div>
+			<div class = "value"><input type = "text" name = "EventDuration" pattern = "^[ 0-9]+$"/></div>
 </div>		
 	<div class = "block_cell">
-			<div class = "text">Venues separated by semocolon</div>
-			<div class = "value"><textarea id = "textarea" name = "EventPlace"></textarea></div>
+			<div class = "text">Venues separated by semicolon</div>
+			<div class = "value"><textarea id = "textarea" name = "EventPlace" placeholder = "building A; building B"></textarea></div>
 </div>		
 	<div class = "block_cell">
 		<div class = "text">
-		Add optional data. <br> By semicolon write title of parameters and their values<br>
+		Add optional data. <br> Write names of parameters and their values by semicolon<br>
 		</div>
 		<div class = "value">
-				<textarea name = "EventAdd" placeholder = "quantity of participators - 403; type of event - It school; manager - David"
-		cols = "50" rows = "2"></textarea>
+				<textarea name = "EventAdd" placeholder = "quantity of participators - 403; type of event - It school"
+		cols = "60" rows = "2"></textarea>
 		</div>
 </div>
 <div class = "block_cell">
 			Add table: <input type = "file" name="TableSource" accept =".csv"/>    *.csv
 			</div>
 <div class = "block_cell">
-Mark if it has string with titles of colomns
+Mark if it has string with titles of columns
 <input type="checkbox" name = "ActTitles" value = "yes"/>
+<br>
 Mark to save the whole table
 <input type="checkbox" name = "all" value = "yes"/>
 			
 </div>
 
 <div class = "block_cell">
-			Connect with base of participators?
+			Mark to search participators
 			<input type="checkbox" id="conny" name = "Conny" value = "yes"/>
 			<div class="protable">
-			Write indexes of colomns concerned with personal parameters
+			<br>
+			Write indexes of columns concerned with personal parameters
+			<br>     <br>
 			<div class = "block_cell">
 			<div class = "text">Name</div>
-			<div class = "value"><input type = "text" required name ="StudentName" pattern = "^[ 0-9]+$" value = "1"></div>
+			<div class = "value"><input type = "text" name ="StudentName" pattern = "^[ 0-9]+$" ></div>
 		</div>
 		
 		<div class = "block_cell">
 			<div class = "text">Surname</div>
-			<div class = "value"><input type = "text" name ="StudentSurname" pattern = "^[ 0-9]+$" value = "2"></div>
+			<div class = "value"><input type = "text" name ="StudentSurname" pattern = "^[ 0-9]+$"></div>
 		</div>
 		
 		<div class = "block_cell">
 			<div class = "text">Patronymic</div>
-			<div class = "value"><input type = "text" name ="StudentPatronymic" pattern = "^[ 0-9]+$" value = "3"></div>
+			<div class = "value"><input type = "text" name ="StudentPatronymic" pattern = "^[ 0-9]+$" ></div>
 		</div>
 		
 		<div class = "block_cell">

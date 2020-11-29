@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-	<title>результат - сервис работы с таблицами</title>
+	<title>Results - Seaside Base</title>
 	<link rel="stylesheet" type = "text/css" href = "styles/main_style.css"/>
 	<link rel="stylesheet" type = "text/css" href = "styles/text_style.css"/>
 	<link rel="stylesheet" type = "text/css" href = "styles/table_style.css"/>
@@ -28,10 +28,10 @@
 <%
 if(request.getAttribute("link_to_par")!=null){
 %>
-<a href = <%="ask_par.jsp?fir_cond="+request.getAttribute("link_to_par").toString().replace(" ", "+")
-+"&fir_cond_and="+request.getAttribute("link_to_par_and").toString().replace(" ", "+")%>>Узнать еще больше</a>
+<a href = <%="ask_par.jsp?"+request.getAttribute("people_parameters").toString().replace(" ", "+")%>>Search by participation</a>
 
 <%} %>
+
 <%= request.getAttribute("exact answer").toString()%>
 </article>
 <div class="push"></div>
