@@ -44,7 +44,7 @@ public class LocalDataBase {
 			Class.forName("com.mysql.jdbc.Driver");
 			String url = "jdbc:mysql://localhost/mysql?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
 			String name = "root";
-			String password = "sowell";
+			String password = "";
 			try {
 				con = DriverManager.getConnection(url, name, password);
 				statement = con.createStatement();
