@@ -18,5 +18,5 @@ Some problems with operations may exists, if request was strange, for instance, 
 Check that database is created.
 
 Pages can look like:
-![alt text](https://github.com/Ksenia-C/SeasideBase/blob/origin/Turkey/WebContent/img/show1.jpg?raw=true)
-![alt text](https://github.com/Ksenia-C/SeasideBase/blob/origin/Turkey/WebContent/img/show2.jpg?raw=true)
+![insert_page](https://github.com/Ksenia-C/SeasideBase/blob/master/Turkey/WebContent/img/show1.png?raw=true)
+![request_page](https://github.com/Ksenia-C/SeasideBase/blob/master/Turkey/WebContent/img/show2.png?raw=true)
